@@ -547,12 +547,12 @@ public class ImagePickerModule extends ReactContextBaseJavaModule
       {
         case REQUEST_PERMISSIONS_FOR_CAMERA:
           selfCheckResult = ActivityCompat
-            .checkSelfPermission(activity, Manifest.permission.WRITE_EXTERNAL_STORAGE);
+            .checkSelfPermission(activity, Manifest.permission.CAMERA);
           break;
 
         case REQUEST_PERMISSIONS_FOR_LIBRARY:
           selfCheckResult = ActivityCompat
-            .checkSelfPermission(activity, Manifest.permission.CAMERA);
+            .checkSelfPermission(activity, Manifest.permission.WRITE_EXTERNAL_STORAGE);
           break;
 
       }
